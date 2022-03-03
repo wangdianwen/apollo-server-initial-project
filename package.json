@@ -1,0 +1,40 @@
+{
+  "name": "boring-project",
+  "version": "1.0.0",
+  "license": "MIT",
+  "dependencies": {
+    "apollo-server": "^3.6.3",
+    "graphql": "^16.3.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.5",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-typescript": "^7.16.7",
+    "@types/node": "^17.0.21",
+    "@types/webpack-env": "^1.16.3",
+    "@types/webpack-node-externals": "^2.5.3",
+    "@typescript-eslint/eslint-plugin": "^5.13.0",
+    "@typescript-eslint/parser": "^5.13.0",
+    "babel": "^6.23.0",
+    "babel-loader": "^8.2.3",
+    "clean-webpack-plugin": "^4.0.0",
+    "eslint": "^8.10.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-typescript": "^16.1.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-prettier": "^4.0.0",
+    "nodemon-webpack-plugin": "^4.7.1",
+    "prettier": "^2.5.1",
+    "ts-node": "^10.6.0",
+    "typescript": "^4.6.2",
+    "webpack": "^5.69.1",
+    "webpack-cli": "^4.9.2",
+    "webpack-node-externals": "^3.0.0"
+  },
+  "scripts": {
+    "build": "webpack --config ./webpack.config.ts --env production",
+    "start": "webpack --config ./webpack.config.ts --env development"
+  }
+}
