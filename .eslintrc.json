@@ -17,9 +17,11 @@
     "plugins": [
         "@typescript-eslint",
         "prettier",
-        "import"
+        "simple-import-sort"
     ],
     "rules": {
-        "prettier/prettier": 2
+        "prettier/prettier": 2,
+        "simple-import-sort/exports": "error",
+        "simple-import-sort/imports": "error"
     }
 }
