@@ -1,0 +1,4 @@
+{
+    "maxWorkers": "100%",
+    "moduleDirectories": ["node_modules"]
+}
