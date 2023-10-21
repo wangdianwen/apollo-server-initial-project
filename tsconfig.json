@@ -15,5 +15,5 @@
       }
     },
     "exclude": [ "node_modules" ],
-    "include": [ "src/**/*.ts", "webpack/webpack.common.ts" ]
+    "include": [ "src/**/*.ts", "tests/**/*.ts", "webpack/webpack.common.ts" ]
 }
