@@ -16,7 +16,7 @@
     "@types/node": "^20.11.30",
     "@types/webpack-env": "^1.18.4",
     "@types/webpack-node-externals": "^3.0.4",
-    "@typescript-eslint/eslint-plugin": "^7.3.1",
+    "@typescript-eslint/eslint-plugin": "^7.4.0",
     "@typescript-eslint/parser": "^7.3.1",
     "babel": "^6.23.0",
     "babel-jest": "^29.7.0",
