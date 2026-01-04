@@ -45,10 +45,19 @@
         "build": "webpack --config ./webpack.config.ts --env production",
         "start": "webpack --config ./webpack.config.ts --env development",
         "test": "jest",
+        "prepare": "husky install",
         "lint": "eslint .",
         "lint:fix": "eslint . --fix",
         "prettier": "prettier --check .",
         "prettier:fix": "prettier --write .",
         "deduplicate": "yarn-deduplicate yarn.lock"
     }
+}
+,
+"lint-staged": {
+    "*.{js,ts,tsx,json,md}": [
+        "prettier --write",
+        "eslint --fix",
+        "git add"
+    ]
 }
