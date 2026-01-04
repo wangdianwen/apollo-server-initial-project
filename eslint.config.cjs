@@ -29,7 +29,27 @@ module.exports = [
         rules: {
             'prettier/prettier': 'error',
             'simple-import-sort/exports': 'error',
-            'simple-import-sort/imports': 'error',
+            'simple-import-sort/imports': [
+                'error',
+                {
+                    groups: [
+                        // Side effect imports.
+                        ['^\\u0000'],
+                        // Node builtins & packages starting with a letter (external packages).
+                        ['^node:', '^[a-z]'],
+                        // Scoped packages and other package imports.
+                        ['^@?\\w'],
+                        // Internal aliases (adjust to your path aliases).
+                        ['^@src(/.*|$)'],
+                        // Parent imports.
+                        ['^\\.\\.(?!/?$)', '^\\.\\.\\/?$'],
+                        // Sibling imports and index.
+                        ['^\\./(?=.*/)(?!/?$)', '^\\.(?!/?$)', '^\\./?$'],
+                        // Style imports.
+                        ['^.+\\.s?css$'],
+                    ],
+                },
+            ],
         },
     },
 ];

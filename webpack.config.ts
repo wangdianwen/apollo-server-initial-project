@@ -1,6 +1,6 @@
 import { CleanWebpackPlugin } from 'clean-webpack-plugin';
 import path from 'path';
-import { Configuration, WebpackPluginInstance } from 'webpack';
+import { Configuration, WebpackPluginInstance, ExternalItem } from 'webpack';
 import NodemonPlugin from 'nodemon-webpack-plugin';
 import nodeExternals from 'webpack-node-externals';
 import ForkTsCheckerWebpackPlugin from 'fork-ts-checker-webpack-plugin';
@@ -37,7 +37,7 @@ module.exports = (env: Record<string, unknown>): Configuration => {
         },
         target: 'node',
         externalsPresets: { node: true },
-        externals: [nodeExternals({})],
+        externals: [nodeExternals({}) as ExternalItem],
         mode: env.production ? 'production' : 'development',
         plugins,
         watch: !env.production,
