@@ -9,10 +9,6 @@ echo 'exec zsh' >> ~/.bashrc
 # Install dependencies
 yarn install
 
-# Ensure Husky hooks are installed and executable
-# `yarn install` runs the `prepare` script which should call `husky install`,
-# but call it explicitly here to be robust on container rebuilds.
-npx --no-install husky install .husky || npx husky install .husky || true
 if [ -d ".husky" ]; then
 	chmod +x .husky/* || true
 fi
