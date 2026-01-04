@@ -4,10 +4,7 @@
 apt-get update
 apt-get install -y zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
-chsh -s /bin/zsh
-
-# Enable git plugin in oh-my-zsh
-sed -i 's/plugins=(git)/plugins=(git git-flow)/g' ~/.zshrc
+echo 'exec zsh' >> ~/.bashrc
 
 # Install dependencies
 yarn install

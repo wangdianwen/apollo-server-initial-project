@@ -1,6 +1,6 @@
 import { CleanWebpackPlugin } from 'clean-webpack-plugin';
 import path from 'path';
-import  { Configuration, WebpackPluginInstance } from 'webpack';
+import { Configuration, WebpackPluginInstance } from 'webpack';
 import NodemonPlugin from 'nodemon-webpack-plugin';
 import nodeExternals from 'webpack-node-externals';
 import ForkTsCheckerWebpackPlugin from 'fork-ts-checker-webpack-plugin';
@@ -8,10 +8,7 @@ import TsconfigPathsPlugin from 'tsconfig-paths-webpack-plugin';
 
 module.exports = (env: Record<string, unknown>): Configuration => {
     const extensions = ['.ts', '.js'];
-    const plugins: WebpackPluginInstance[] = [
-        new CleanWebpackPlugin(),
-        new ForkTsCheckerWebpackPlugin(),
-    ];
+    const plugins: WebpackPluginInstance[] = [new CleanWebpackPlugin(), new ForkTsCheckerWebpackPlugin()];
     if (!env.production) {
         plugins.push(new NodemonPlugin());
     }
