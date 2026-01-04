@@ -37,7 +37,7 @@ module.exports = (env: Record<string, unknown>): Configuration => {
         },
         target: 'node',
         externalsPresets: { node: true },
-        externals: [nodeExternals({}) as ExternalItem],
+        externals: [nodeExternals({}) as any],
         mode: env.production ? 'production' : 'development',
         plugins,
         watch: !env.production,
