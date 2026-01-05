@@ -17,6 +17,11 @@ if [ -d ".husky" ]; then
 	chmod +x .husky/* || true
 fi
 
+# Remove deprecated lines from husky pre-commit hook
+if [ -f ".husky/pre-commit" ]; then
+    sed -i '1,2d' .husky/pre-commit
+fi
+
 # Configure git
 git config --global user.name "Wang Dianwen"
 git config --global user.email "wangdw2012@gmail.com"
