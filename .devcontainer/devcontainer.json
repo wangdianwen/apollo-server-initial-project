@@ -12,6 +12,7 @@
                 "eamodio.gitlens",
                 "streetsidesoftware.code-spell-checker",
                 "ms-azuretools.vscode-containers",
+                "sst-dev.opencode",
                 // TypeScript/Project-specific
                 "dbaeumer.vscode-eslint",
                 "esbenp.prettier-vscode",

@@ -12,7 +12,7 @@ yarn install
 # Ensure Husky hooks are installed and executable
 # `yarn install` runs the `prepare` script which should call `husky install`,
 # but call it explicitly here to be robust on container rebuilds.
-npx --no-install husky install .husky || npx husky install .husky || true
+npx --no-install husky .husky || npx husky .husky || true
 if [ -d ".husky" ]; then
 	chmod +x .husky/* || true
 fi
@@ -25,4 +25,9 @@ fi
 # Configure git
 git config --global user.name "Wang Dianwen"
 git config --global user.email "wangdw2012@gmail.com"
+
+# Install OpenCode CLI
+curl -fsSL https://opencode.ai/install | bash
+echo 'export PATH=/root/.opencode/bin:$PATH' >> ~/.zshrc
+
 
