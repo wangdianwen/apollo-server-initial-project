@@ -1,63 +1,63 @@
 {
-  "name": "boring-project",
-  "version": "2.0.0",
-  "license": "MIT",
-  "dependencies": {
-    "apollo-server": "^3.13.0",
-    "graphql": "^16.12.0"
-  },
-  "devDependencies": {
-    "@babel/cli": "^7.28.3",
-    "@babel/core": "^7.28.5",
-    "@babel/plugin-proposal-class-properties": "^7.18.6",
-    "@babel/preset-env": "^7.28.5",
-    "@babel/preset-typescript": "^7.28.5",
-    "@types/jest": "^30.0.0",
-    "@types/node": "^25.0.3",
-    "@types/webpack-env": "^1.18.8",
-    "@types/webpack-node-externals": "^3.0.4",
-    "@typescript-eslint/eslint-plugin": "^8.51.0",
-    "@typescript-eslint/parser": "^8.51.0",
-    "babel": "^6.23.0",
-    "babel-jest": "^30.2.0",
-    "babel-loader": "^10.0.0",
-    "clean-webpack-plugin": "^4.0.0",
-    "eslint": "^9.39.2",
-    "eslint-config-airbnb": "^19.0.4",
-    "eslint-config-airbnb-typescript": "^18.0.0",
-    "eslint-config-prettier": "^10.1.8",
-    "eslint-plugin-import": "^2.32.0",
-    "eslint-plugin-prettier": "^5.5.4",
-    "eslint-plugin-simple-import-sort": "^12.1.1",
-    "fork-ts-checker-webpack-plugin": "^9.1.0",
-    "husky": "^9.1.7",
-    "jest": "^30.2.0",
-    "lint-staged": "^16.2.7",
-    "nodemon-webpack-plugin": "^4.8.2",
-    "prettier": "^3.7.4",
-    "ts-node": "^10.9.2",
-    "tsconfig-paths-webpack-plugin": "^4.2.0",
-    "typescript": "^5.9.3",
-    "webpack": "^5.104.1",
-    "webpack-cli": "^6.0.1",
-    "webpack-node-externals": "^3.0.0",
-    "yarn-deduplicate": "^6.0.2"
-  },
-  "scripts": {
-    "build": "webpack --config ./webpack.config.ts --env production",
-    "start": "webpack --config ./webpack.config.ts --env development",
-    "test": "jest",
-    "prepare": "husky",
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix",
-    "prettier": "prettier --check .",
-    "prettier:fix": "prettier --write .",
-    "deduplicate": "yarn-deduplicate yarn.lock"
-  },
-  "lint-staged": {
-    "*.{js,ts,tsx,json,md}": [
-      "prettier --write",
-      "eslint --fix"
-    ]
-  }
+    "name": "boring-project",
+    "version": "2.0.0",
+    "license": "MIT",
+    "dependencies": {
+        "apollo-server": "^3.13.0",
+        "graphql": "^16.12.0"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.28.3",
+        "@babel/core": "^7.28.5",
+        "@babel/plugin-proposal-class-properties": "^7.18.6",
+        "@babel/preset-env": "^7.28.5",
+        "@babel/preset-typescript": "^7.28.5",
+        "@types/jest": "^30.0.0",
+        "@types/node": "^25.0.3",
+        "@types/webpack-env": "^1.18.8",
+        "@types/webpack-node-externals": "^3.0.4",
+        "@typescript-eslint/eslint-plugin": "^8.51.0",
+        "@typescript-eslint/parser": "^8.51.0",
+        "babel": "^6.23.0",
+        "babel-jest": "^30.2.0",
+        "babel-loader": "^10.0.0",
+        "clean-webpack-plugin": "^4.0.0",
+        "eslint": "^9.39.2",
+        "eslint-config-airbnb": "^19.0.4",
+        "eslint-config-airbnb-typescript": "^18.0.0",
+        "eslint-config-prettier": "^10.1.8",
+        "eslint-plugin-import": "^2.32.0",
+        "eslint-plugin-prettier": "^5.5.4",
+        "eslint-plugin-simple-import-sort": "^12.1.1",
+        "fork-ts-checker-webpack-plugin": "^9.1.0",
+        "husky": "^9.1.7",
+        "jest": "^30.2.0",
+        "lint-staged": "^16.2.7",
+        "nodemon-webpack-plugin": "^4.8.2",
+        "prettier": "^3.7.4",
+        "ts-node": "^10.9.2",
+        "tsconfig-paths-webpack-plugin": "^4.2.0",
+        "typescript": "^5.9.3",
+        "webpack": "^5.104.1",
+        "webpack-cli": "^6.0.1",
+        "webpack-node-externals": "^3.0.0",
+        "yarn-deduplicate": "^6.0.2"
+    },
+    "scripts": {
+        "build": "webpack --config ./webpack.config.ts --env production",
+        "start": "webpack --config ./webpack.config.ts --env development",
+        "test": "jest",
+        "prepare": "husky",
+        "lint": "eslint .",
+        "lint:fix": "eslint . --fix",
+        "prettier": "prettier --check .",
+        "prettier:fix": "prettier --write .",
+        "deduplicate": "yarn-deduplicate yarn.lock"
+    },
+    "lint-staged": {
+        "*.{js,ts,tsx,json,md}": [
+            "prettier --write",
+            "eslint --fix"
+        ]
+    }
 }
