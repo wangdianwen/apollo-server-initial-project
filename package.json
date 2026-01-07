@@ -47,7 +47,7 @@
         "build": "webpack --config ./webpack.config.ts --env production",
         "start": "webpack --config ./webpack.config.ts --env development",
         "test": "jest",
-        "prepare": "husky install",
+        "prepare": "husky init",
         "lint": "eslint .",
         "lint:fix": "eslint . --fix",
         "prettier": "prettier --check .",
